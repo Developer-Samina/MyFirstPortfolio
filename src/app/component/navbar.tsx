@@ -3,14 +3,17 @@ import React from "react";
 import Image from "next/image";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 
+// Importing the image statically
+import profilePic from "/Public/assets/picture/pic.png"; // Update the path as needed
+
 const Navbar = () => {
   return (
-    <div className="bg-white z-50 sticky top-0">
+    <div className="bg-slate-300 z-50 sticky top-0">
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image
-              src={require("../../../Public/assets/picture/pic.png")}
+              src={profilePic}  // Using the imported image
               alt="Samina"
               width={100}
               height={100}

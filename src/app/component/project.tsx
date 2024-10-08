@@ -2,10 +2,15 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
+// Importing the images statically
+import todoListImg from "../../../Public/assets/project/todo list.webp"; // Update the path as needed
+import calculatorImg from "../../../Public/assets/project/calculator.webp"; // Update the path as needed
+import resumeBuilderImg from "../../../Public/assets/project/Resume Builder.png"; // Update the path as needed
+
 const Project = () => {
   return (
     <div id="project">
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font bg-gray-100">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -13,17 +18,17 @@ const Project = () => {
             </h1>
           </div>
           <div className="flex flex-wrap -m-5 -mt-[5rem]">
-            {/* Project */}
+            {/* Project 1 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
               <div className="flex relative">
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../Public/assets/project/todo list.webp")}
+                  src={todoListImg} // Using the imported image
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    todo list app Project
+                    To-Do List App Project
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     TODOLIST
@@ -39,23 +44,24 @@ const Project = () => {
                       "https://github.com/Developer-Samina/CLI-project03-todolist.git"
                     }
                   >
-                    <p className="leading-relaxed  text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 hover:underline">
                       View Project...
                     </p>
                   </Link>
                 </div>
               </div>
             </div>
+            {/* Project 2 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
               <div className="flex relative">
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../Public/assets/project/calculator.webp")}
+                  src={calculatorImg} // Using the imported image
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
-                    calculator Project
+                    Calculator Project
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     CALCULATOR
@@ -70,19 +76,20 @@ const Project = () => {
                       "https://github.com/Developer-Samina/CLI-project00_calculator.git"
                     }
                   >
-                    <p className="leading-relaxed  text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 hover:underline">
                       View Project...
                     </p>
                   </Link>
                 </div>
               </div>
             </div>
+            {/* Project 3 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
               <div className="flex relative">
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={require("../../../Public/assets/project/Resume Builder.png")}
+                  src={resumeBuilderImg} // Using the imported image
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">
@@ -99,7 +106,7 @@ const Project = () => {
                     target="-blank"
                     href={"https://milestone5-resume-by-samina.vercel.app/"}
                   >
-                    <p className="leading-relaxed  text-blue-500 hover:underline">
+                    <p className="leading-relaxed text-blue-500 hover:underline">
                       View Project...
                     </p>
                   </Link>

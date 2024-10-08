@@ -4,6 +4,9 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
 
+// Importing the image statically
+import heroImage from "../../../Public/assets/picture/profile1.png"; // Update the path as needed
+
 const Hero = () => {
   return (
     <section className="text-gray-600 bg-gray-100 body-font bg-cover bg-center">
@@ -43,7 +46,7 @@ const Hero = () => {
             alt="hero"
             width={500}
             height={500}
-            src={require("../../../Public/assets/picture/profile1.png")}
+            src={heroImage} // Using the imported image
           />
         </div>
       </div>

@@ -4,14 +4,17 @@ import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
 
+// Importing the image statically
+import profilePic from "../../../Public/assets/picture/pic.png"; // Update the path as needed
+
 const Footer = () => {
   return (
-    <div className="bg-blue-50">
+    <div className="bg-slate-200">
       <footer className="text-gray-600 body-font">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <Image
-              src={require("../../../Public/assets/picture/pic.png")}
+              src={profilePic}  // Using the imported image
               alt="Samina"
               width={100}
               height={100}
@@ -24,8 +27,6 @@ const Footer = () => {
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <div style={{ display: "flex", gap: "10px" }}>
-              {" "}
-              {/* This will add a 10px gap */}
               <Link
                 target="_blank"
                 href={"https://github.com/Developer-Samina"}

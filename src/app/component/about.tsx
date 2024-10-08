@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div id="about">
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font custom-image  bg-gray-100 ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
@@ -12,7 +12,8 @@ const About = () => {
               alt="hero"
               width={600}
               height={600}
-              src={require("../../../Public/assets/picture/profile1.png")}
+              /* Replaced require() */
+              src={"/assets/picture/profile1.png"}  
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -21,7 +22,7 @@ const About = () => {
             </h1>
             <p className="mb-4 leading-relaxed ">
               Welcome to my portfolio! I am Samina, a passionate web developer
-              and an aspiring Certified Cloud Applied AI Engineer.My portfolio
+              and an aspiring Certified Cloud Applied AI Engineer. My portfolio
               highlights a variety of projects built with cutting-edge
               technologies, including Next.js. I am dedicated to continuous
               learning and hands-on experience, with a strong commitment to
